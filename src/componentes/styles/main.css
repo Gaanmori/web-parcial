@@ -1,0 +1,155 @@
+
+/* MEDIDAS DE UN MAILING */
+#mailing {
+  width: 750px;
+  height: 750px;
+  margin: auto;
+  margin-top: 15px;
+}
+/* reseteamos los margenes y paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+/* las imagenes ocuparan el 100% de sus contenedores o espacio disponible la altura sera modificada automaticamente al verse afectado el ancho */
+img {
+  width: 90%;
+}
+
+.card {
+  /* sombras para el efecto de carta */
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* cuando se posiciona el mouse sobre la imagen se realiza un pequeño efecto con mas sombra */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(167, 199, 62, 0.5);
+}
+
+/* la letra general del codigo sera oscura, al tener un fondo claro */
+body {
+  color: #333333;
+  font-family: "Catamaran", sans-serif;
+}
+/* CENTRAMOS EL TEXTO */
+#mailing h1,
+#mailing h2,
+#mailing h3 {
+  text-align: center;
+}
+#discount {
+  margin-top: 10px;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* aplicamos flex para alinear los items y tener la imagen y descripcion en la misma fila */
+#home {
+  display: flex;
+  align-items: center;
+}
+/* le damos el imagen exacto a cada elemento para evitar posibles problemas de dimensiones */
+#home #text,
+#home #div-imagen {
+  width: 375px;
+  padding: 10px;
+}
+
+/* le damos formato al titulo y subtitulo */
+#home #text h1 {
+  font-size: 2.2rem;
+  /* color: #555555; */
+}
+#home #text h2 {
+  font-size: 1.4rem;
+  color: #444444;
+}
+/* justificamos el texto */
+
+#home #text p {
+  text-align: justify;
+}
+
+#funcionalidades-intro {
+  text-align: center;
+}
+/* organizamos el contenedor de los items */
+#caracteristicas {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+#caracteristicas .item {
+  width: 200px;
+  text-align: center;
+}
+/* y aumentamos el tamaño y le damos el color que tendran los iconos que usaremos desde Font-awesome */
+#caracteristicas i {
+  font-size: 3.5rem;
+  color: #a7c73e;
+}
+
+/* -------------EVENTO------------------ */
+/* usamos la seccion para darle un background */
+.evento {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background: #a7c73e;
+}
+/* luego una capa oscura sobre la image, del mismo tamaño */
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* le damos formato a los titulos  */
+.evento h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.evento h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+/* y posicionamos/alineamos la informacion */
+#contenido-evento {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* apariencia de los botones y efecto cuando este el mouse sobre ellos */
+
+a {
+  text-decoration: none;
+}
+.btn {
+  color: #333333;
+
+  display: inline-block;
+  background: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  margin: 5px auto;
+}
+
+.btn:hover {
+  background: #333333;
+  color: white;
+}
